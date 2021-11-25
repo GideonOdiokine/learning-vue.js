@@ -1,5 +1,15 @@
 <template>
+<h2>{{name}}</h2>
+<div>
+  <button v-on:mouseover="name='Odiokine'">Change name </button>
+</div>
 
+<h2> {{count}} </h2>
+
+<div>
+  <button v-on:click="count +=1">Increase</button>
+  <button v-on:click="count -=1">reduce</button>
+</div>
 </template>
 
 <script>
@@ -7,17 +17,12 @@ export default {
   name: "App",
   data() {
     return {
-     baseMultiply:5,
-     baseValue:10
+     name:'Gideon',
+     count:0
     };
   },
   methods:{
-    add(a, b, c){
-      return a + b + c
-    },
-    multiply(num){
-      return num * this.baseMultiply;
-    }
+  
   }
 };
 </script>
