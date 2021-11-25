@@ -1,6 +1,5 @@
 <template>
-<h2>add method {{add(3,8,9)}}</h2>
-<h2>add method {{add(12,12,10)}}</h2>
+
 </template>
 
 <script>
@@ -8,12 +7,16 @@ export default {
   name: "App",
   data() {
     return {
-     
+     baseMultiply:5,
+     baseValue:10
     };
   },
   methods:{
     add(a, b, c){
       return a + b + c
+    },
+    multiply(num){
+      return num * this.baseMultiply;
     }
   }
 };
