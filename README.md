@@ -1,6 +1,6 @@
-# hello-world
 
-## Project setup
+
+## Learning vue.js
 ```
 npm install
 ```
