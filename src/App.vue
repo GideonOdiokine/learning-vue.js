@@ -12,7 +12,17 @@
   </Modal>
 </div>
 
+<div v-if="showModalTwo" >
+  <Modal @close="toggleModalTwo" >
+     <h3>Hello I'm Modal Two </h3>
+     <p>I and my family shall to the glory of God</p>
+     
+  </Modal>
+</div>
+
 <button @click="toggleModal" >open modal</button>
+
+<button @click="toggleModalTwo" >open modal two</button>
 
 
 </template>
@@ -29,13 +39,17 @@ export default {
       title:"My First Vue App",
       header:"Join for a giveaway",
       text:"Grab your copy now",
-      showModal:false
+      showModal:false,
+      showModalTwo:false
     };
   },
   methods:{
 
     toggleModal(){
       this.showModal = !this.showModal;
+    },
+    toggleModalTwo(){
+      this.showModalTwo=!this.showModalTwo
     }
     // handleClick(){ 
     //   console.log(this.$refs.name)
