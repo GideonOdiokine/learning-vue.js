@@ -12,13 +12,13 @@
   </Modal>
 </div>
 
-<div v-if="showModalTwo" >
+<teleport to=".modal" v-if="showModalTwo" >
   <Modal @close="toggleModalTwo" >
      <h3>Hello I'm Modal Two </h3>
      <p>I and my family shall to the glory of God</p>
-     
+
   </Modal>
-</div>
+</teleport>
 
 <button @click="toggleModal" >open modal</button>
 
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style>
-#app{
+#app, .modal{
   font-family: sans-serif;
   text-align: center;
   margin-top: 60px;
