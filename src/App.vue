@@ -1,7 +1,7 @@
 <template>
  <h3> {{title}} </h3>
 
-<Modal />
+<Modal/>
 </template>
 
 <script>

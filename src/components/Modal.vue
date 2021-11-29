@@ -25,6 +25,9 @@
     height: 100%;
 
 }
+p{
+    font-style:normal;
+}
 h3{
     color: aqua;
     border: none;
