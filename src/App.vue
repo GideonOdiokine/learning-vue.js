@@ -15,7 +15,7 @@
 <teleport to=".modal" v-if="showModalTwo" >
   <Modal @close="toggleModalTwo" >
      <h3>Hello I'm Modal Two </h3>
-     <p>I and my family shall to the glory of God</p>
+     <p>I and my family to the glory of God</p>
 
   </Modal>
 </teleport>
